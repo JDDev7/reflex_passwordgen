@@ -1,0 +1,359 @@
+* {
+    font-family: Archivo, sans-serif;
+}
+
+
+
+/* Containers */
+.main-container {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url("background_image.jpg");
+    background-size: cover;
+
+}
+
+.drawer-container {
+    display: none !important;
+
+}
+
+.mobile-menu-button  {
+    display: none !important;
+}
+
+.stack-container {
+    display: flex;
+    width: 100% !important;
+}
+.navbar-container {
+    display: flex;
+    padding-top: 0.3rem;
+    justify-content: end !important;
+    padding-left: 1rem;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.links-container {
+    display: flex;
+    margin-top: 0;
+    margin-right: 10%;
+    justify-content: end !important;
+    gap: 4rem !important;
+}
+
+.text-container {
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: solid 1px rgba(240, 240, 240, 0.297);
+}
+.password-gen-button-container {
+    margin-top: 1rem;
+}
+
+.password-text {
+    color: white;
+}
+.password-gen-box {
+    display: flex !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(102, 65, 94, 0.196);
+    width: 100%;
+    height: 2.5rem;
+}
+
+
+
+.password-gen-stack {
+    display: flex;
+    align-items: center !important;
+}
+
+/* mid screen title text */
+.title-heading {
+    font-family: Kanit, sans-serif !important;
+    font-size: 3rem !important;
+    color: white !important;
+}
+/* mid screen help text */
+.help-text {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white !important;
+}
+/* footer text */
+
+.footer-text {
+    font-size: 1rem !important;
+    margin-top: 0.2rem !important;
+    color: rgb(240, 240, 240) !important;
+    text-align: center;
+}
+
+/* background image */
+.background-image {
+    position: fixed;
+    filter: blur(3px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* character buttons */
+.character-button {
+    font-size: 1.2rem !important;
+    padding: 0.4rem !important;
+    border-radius: 0.3rem !important;
+    border: solid 1px rgba(240, 240, 240, 0.297) !important;
+    background-color: rgba(107, 52, 97, 0.363) !important;
+}
+
+.language-button {
+    display: flex !important;
+    align-self: center !important;
+    font-size: 1rem !important;
+    padding-bottom: 0rem !important;
+    padding-top: 0rem !important;
+    border-radius: 0.3rem !important;
+    border: solid 1px rgba(240, 240, 240, 0.297) !important;
+    background-color: rgba(107, 52, 97, 0.363) !important;
+}
+
+.language-text {
+    font-size: 1.2rem
+}
+
+/* links */
+.navbar-link {
+    font-size: 1.2rem;
+    color: rgb(240, 240, 240) !important;
+    gap: 5rem !important;
+    margin-top: 0;
+}
+
+.logo-link {
+    margin-top: 0.5rem !important;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+}
+
+.logo-container {
+    margin-top: 1.3rem;
+}
+
+
+/* Responsive */
+/* tablet */
+@media (min-width: 768px) and (max-width: 1300px) {
+    .main-container {
+        display: flex;
+        position: relative;
+        min-height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;   
+    }
+    .title-heading {
+        font-family: Kanit, sans-serif !important;
+        font-size: 1.7rem !important;
+        text-align: center !important;
+        line-break: normal !important;
+    }
+    .text-container {
+        display: flex;
+        justify-content: center !important;
+        margin-top: 0.4rem;
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+        border: solid 1px rgba(240, 240, 240, 0.297);
+    }
+    .help-text {
+        font-size: 1rem;
+        text-align: center !important;
+    }
+    .password-text {
+        font-size: 1rem !important;
+        text-align: center;
+        color: white !important
+    }
+    .password-gen-button-container {
+        display: flex;
+    }
+    .footer-text {
+        font-size: 1rem !important;
+        margin: 0.4rem !important;
+        color: rgb(240, 240, 240) !important;
+        text-align: center;
+    }
+    .footer-container {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(102, 65, 94, 0.196);
+        width: 100%;
+        height:fit-content !important;
+        height: 2.5rem;
+    }
+    .character-button, .language-button {
+        font-size: 1.1rem !important;
+        padding: 0.4rem !important;
+        border-radius: 0.3rem !important;
+        border: solid 1px rgba(240, 240, 240, 0.297) !important;
+        background-color: rgba(107, 52, 97, 0.363) !important;
+    }
+
+    .drawer-container {
+        display: flex !important;
+        background-color: rgba(107, 52, 97, 0.363) !important;
+    }
+    
+    .mobile-menu-button  {
+        display: none !important;
+        }
+
+    .links-container {
+        display: flex;
+        padding-top: 0 !important;
+        margin-top: 0;
+        margin-right: 10%;
+        justify-content: end !important;
+        gap: 2rem !important;
+    }
+    .navbar-link {
+        font-size: 1.1rem;
+    }
+}
+
+/* phone */
+@media (max-width: 500px) {
+    .main-container {
+        display: flex;
+        position: relative;
+        min-height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;
+        background-image: url("background_image_phone.jpg");
+        background-size: cover;
+    
+    }
+    .title-heading {
+        font-family: Kanit, sans-serif !important;
+        font-size: 1.6rem !important;
+        text-align: center !important;
+        line-break: normal !important;
+    }
+    .text-container {
+        display: flex;
+        justify-content: center !;
+        margin-top: 0.4rem;
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+        border: solid 1px rgba(240, 240, 240, 0.297);
+    }
+    .help-text {
+        font-size: 0.8rem;
+        text-align: center !important;
+    }
+    .password-text {
+        font-size: 0.8rem !important;
+        text-align: center;
+        color: white !important
+    }
+    .password-gen-button-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .password-gen-box {
+        display: flex !important;
+        position: absolute;
+        width: 80%;
+    }
+    .footer-text {
+        font-size: 0.8rem !important;
+        margin: 0.4rem !important;
+        color: rgb(240, 240, 240) !important;
+        text-align: center;
+    }
+    .footer-container {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(102, 65, 94, 0.196);
+        width: 100%;
+        height:fit-content !important;
+        height: 2.5rem;
+    }
+    .character-button, .language-button {
+        font-size: 0.9rem !important;
+        padding: 0.4rem !important;
+        border-radius: 0.3rem !important;
+        border: solid 1px rgba(240, 240, 240, 0.297) !important;
+        background-color: rgba(107, 52, 97, 0.363) !important;
+    }
+
+    .drawer-container {
+        display: flex !important;
+        background-color: rgba(107, 52, 97, 0.363) !important;
+    }
+    
+    .mobile-menu-button  {
+        display: block !important;
+        background-color: rgba(107, 52, 97, 0.363) !important;
+        border-radius: 0.3rem !important;
+        border: solid 1px rgba(240, 240, 240, 0.297) !important;
+    }
+    .mobile-menu-button-close  {
+        display: block !important;
+        align-self: start !important;
+        background-color: rgba(107, 52, 97, 0.363) !important;
+        border-radius: 0.3rem !important;
+        border: solid 1px rgba(240, 240, 240, 0.297) !important;
+    }
+    .links-container {
+        display: flex;
+        padding-top: 0 !important;
+        margin-top: 0;
+        margin-right: 10%;
+        justify-content: end !important;
+        gap: 0.5rem !important;
+    }
+    .navbar-link {
+        display: none;
+    }
+
+    .phone-navbar-link {
+        font-size: 1.2rem;
+        color: rgb(240, 240, 240) !important;
+        margin-top: 0;
+        text-align: start !important;
+    }
+    .drawer-container {
+        height: 100%;
+        width: 100%;
+    }
+    .links-drawer {
+        display: flex;
+        width: 100% !important;
+        margin-top: 0.5rem !important;
+    }
+
+
+}
+
