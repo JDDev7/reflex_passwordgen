@@ -6,9 +6,6 @@ import reflex as rx
 from constants import *
 from passwordgenerator.states.states import PasswordGeneratorState, LanguageSelectState
 
-
-    
-
 def index() -> rx.Component:
     return rx.box(
         rx.vstack(

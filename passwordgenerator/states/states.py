@@ -2,7 +2,6 @@ import reflex as rx
 from constants import *
 import random
 import string
-import pyperclip
 import locale
 
 class LanguageSelectState(rx.State):
@@ -63,5 +62,6 @@ class PasswordGeneratorState(rx.State):
     def on_button_click(self, length):
         self.update_password_length(length)
         self.generate_password()
-        pyperclip.copy(self.generated_password)
+        # pyperclip.copy(self.generated_password)
+        yield rx.set_clipboard(self.generated_password)
      
