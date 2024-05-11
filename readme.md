@@ -1,5 +1,7 @@
 # SIMPLE PASSWORD GENERATOR WEBSITE
 
+[Link to the site](jddev-passgen.reflex.run)
+
 ## What is this project about?
 This project is merely a simple beginning web development project i made in python using the Reflex Framework, wich lets you do fullstack apps in pure python. This website will help you generate a safe, random password with the press of a button!
 
